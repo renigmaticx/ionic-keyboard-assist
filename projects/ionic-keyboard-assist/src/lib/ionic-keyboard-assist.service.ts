@@ -72,7 +72,7 @@ export class IonicKeyboardAssist implements OnDestroy {
     this.pages.push(activeElement);
 
     if (this.options.scrollPadding) {
-      this.setPadding(activeElement, event.keyboardHeight);
+      this.setPadding(activeElement, event.keyboardHeight + 48);
     }
 
     if (this.options.scrollAssist) {
